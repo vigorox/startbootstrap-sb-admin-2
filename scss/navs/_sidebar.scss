@@ -134,7 +134,7 @@
   }
 }
 
-@include media-breakpoint-up(md) {
+// @include media-breakpoint-up(md) {
   .sidebar {
     width: $sidebar-base-width !important;
     .nav-item {
@@ -260,7 +260,7 @@
       }
     }
   }
-}
+// }
 
 // Sidebar Color Variants
 

@@ -59,26 +59,9 @@
           padding: 0.5rem 0.5rem 0.5rem 2rem;
           margin: 0 0;
           display: block;
-          color: fade-out($white, 0.2);
-          i {
-            color: fade-out($white, 0.7);
-          }
           text-decoration: none;
           /*border-radius: $border-radius;*/
           white-space: nowrap;
-          &:hover {
-            color: $white;
-            font-weight: 700;
-           
-          }
-          &:active {
-            background-color: $gray-300;
-          }
-          &.active {
-            color: $white;
-            background-color: $primary;
-            font-weight: 700;
-          }
         }
       }
     }
@@ -141,7 +124,7 @@
   }
 }
 
-// @include media-breakpoint-up(md) {
+@include media-breakpoint-up(md) {
   .sidebar {
     width: $sidebar-base-width !important;
     .nav-item {
@@ -267,12 +250,13 @@
       }
     }
   }
-// }
+}
 
 // Sidebar Color Variants
 
 // Sidebar Light
 .sidebar-light {
+  background: $white;
   .sidebar-brand {
     color: $gray-700;
   }
@@ -281,6 +265,30 @@
   }
   .sidebar-heading {
     color: $gray-500;
+  }
+  .collapse,
+  .collapsing {
+    .collapse-inner {
+      background: $white;
+      .collapse-item {
+        color: fade-out($dark, 0.2);
+        i {
+          color: fade-out($dark, 0.7);
+        }
+        &:hover {
+          color: $gray-900;
+          font-weight: 700;
+         
+        }
+        &:active {
+          background-color: $gray-300;
+        }
+        &.active {
+          color: $primary;
+          font-weight: 700;
+        }
+      }
+    }
   }
   .nav-item {
     .nav-link {
@@ -324,6 +332,7 @@
 
 // Sidebar Dark
 .sidebar-dark {
+  background: $dark;
   .sidebar-brand {
     color: $white;
   }
@@ -332,6 +341,31 @@
   }
   .sidebar-heading {
     color: fade-out($white, 0.6);
+  }
+  .collapse,
+  .collapsing {
+    .collapse-inner {
+      background: $dark;
+      .collapse-item {
+        color: fade-out($white, 0.2);
+        i {
+          color: fade-out($white, 0.7);
+        }
+        &:hover {
+          color: $white;
+          font-weight: 700;
+         
+        }
+        &:active {
+          background-color: $gray-300;
+        }
+        &.active {
+          color: $white;
+          background-color: $primary;
+          font-weight: 700;
+        }
+      }
+    }
   }
   .nav-item {
     .nav-link {

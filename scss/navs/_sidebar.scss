@@ -55,21 +55,28 @@
           color: $gray-500;
         }
         .collapse-item {
-          padding: 0.5rem 1rem;
-          margin: 0 0.5rem;
+          font-size: inherit;
+          padding: 0.5rem 0.5rem 0.5rem 2rem;
+          margin: 0 0;
           display: block;
-          color: $gray-900;
+          color: fade-out($white, 0.2);
+          i {
+            color: fade-out($white, 0.7);
+          }
           text-decoration: none;
-          border-radius: $border-radius;
+          /*border-radius: $border-radius;*/
           white-space: nowrap;
           &:hover {
-            background-color: $gray-200;
+            color: $white;
+            font-weight: 700;
+           
           }
           &:active {
             background-color: $gray-300;
           }
           &.active {
-            color: $primary;
+            color: $white;
+            background-color: $primary;
             font-weight: 700;
           }
         }
@@ -156,7 +163,7 @@
       }
       .collapse,
       .collapsing {
-        margin: 0 1rem;
+        margin: 0;
       }
       .nav-link {
         display: block;

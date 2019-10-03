@@ -120,6 +120,7 @@
     padding: 0 1rem;
     font-weight: 800;
     font-size: 0.65rem;
+    margin-bottom: 0.5rem;
     @extend .text-uppercase;
   }
 }
@@ -152,7 +153,7 @@
         display: block;
         width: 100%;
         text-align: left;
-        padding: 1rem;
+        padding: 0.8rem;
         width: $sidebar-base-width;
         i {
           font-size: 0.85rem;
@@ -247,6 +248,7 @@
       }
       .sidebar-heading {
         text-align: center;
+        margin-bottom:0.5rem;
       }
     }
   }
@@ -285,7 +287,7 @@
         }
         &.active {
           color: $white;
-          background-color: rgba($primary, 0.9);
+          background-color: rgba($primary, 0.8);
           font-weight: 700;
         }
       }
@@ -385,6 +387,13 @@
       // Accordion
       &[data-toggle="collapse"]::after {
         color: fade-out($white, 0.5);
+      }
+      &.active {
+        color: $white;
+        background-color: rgba($primary, 0.8);
+        i {
+          color: $white;
+        }
       }
     }
     &.active {

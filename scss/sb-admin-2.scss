@@ -6,6 +6,10 @@ $dark: #373f46;
 // Import Custom SB Admin 2 Variables (Overrides Default Bootstrap Variables)
 @import "variables.scss";
 
+// paulhsu - start: $body-color $gray-600 -> $gray-800
+$body-color: $gray-800;
+// paulhsu - end
+
 // Import Bootstrap
 @import "../vendor/bootstrap/scss/bootstrap.scss";
 
@@ -23,3 +27,4 @@ $dark: #373f46;
 @import "login.scss";
 @import "error.scss";
 @import "footer.scss";
+
